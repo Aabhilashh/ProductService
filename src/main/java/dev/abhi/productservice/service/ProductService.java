@@ -5,13 +5,13 @@ import dev.abhi.productservice.models.product;
 import java.util.List;
 
 public interface ProductService {
-    product getProductDetails(int productid);
+    product getProductDetails(Long productid);
     List<product> getAllAvailableProducts();
     product letsCreateProduct(String title,
-                  String description,
-                  int price,
-                  Category category,
-                  String imageURL
+                              double price,
+                              String description,
+                              String image,
+                              String category
                     );
 
 

@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 @NoArgsConstructor
 public class product {
 
-    private int id;
+    private long id;
     private String title;
-    private String decription;
-    private int price;
-    private String imageUrl;
+    private double price;
+    private String description;
+    private String image;
     private Category category;
     }

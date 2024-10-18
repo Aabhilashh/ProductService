@@ -38,7 +38,7 @@ public class ProductController {
 
     @GetMapping("/products")
     public List<product> getAllProducts(){
-        return null;
+        return productService.getAllAvailableProducts();
     }
 
     @PutMapping("/products/{itemid}")
